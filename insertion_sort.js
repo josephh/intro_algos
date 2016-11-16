@@ -10,7 +10,8 @@ if(!inputArray) {
 
 for(j; j < inputArray.length; j += 1) {
 /** 
- The for loop has an invariant - that the sub-array is sorted - and that must hold prior to the first loop iteration and after each iteration. 
+ The for loop has an invariant - that the sub-array is sorted - and that must hold prior to the first loop iteration 
+ and after each iteration. 
 */
   key = Number(inputArray[j]) // zero-based  
   i = j - 1  
