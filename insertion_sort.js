@@ -13,7 +13,7 @@ for(j; j < inputArray.length; j += 1) {
  The for loop has an invariant - that the sub-array is sorted - and that must hold prior to the first loop iteration 
  and after each iteration. 
 */
-  key = Number(inputArray[j]) // zero-based  
+  key = Number(inputArray[j])
   i = j - 1  
 
   while(i > 0 && Number(inputArray[i]) > key) { 
