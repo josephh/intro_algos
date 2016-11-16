@@ -17,11 +17,11 @@ for(j; j < inputArray.length; j += 1) {
   i = j - 1  
 
   while(i > 0 && Number(inputArray[i]) > key) { 
-    inputArray[i + 1] = inputArray[i] // shuffle 
-    i -= 1 // move the index variable towards the front 
+    inputArray[i + 1] = inputArray[i]
+    i -= 1
   }
 
-  inputArray[i + 1] = key // shuffle the key (or leave it in place)
+  inputArray[i + 1] = key
 
 }
 
