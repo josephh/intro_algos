@@ -12,7 +12,7 @@ module.exports = (inputArray) => {
   key = Number(inputArray[j])
     i = j - 1  
 
-    while(i > 0 && Number(inputArray[i]) > key) { 
+    while(i >= -1 && Number(inputArray[i]) > key) { 
     inputArray[i + 1] = inputArray[i]
     i -= 1
     }
