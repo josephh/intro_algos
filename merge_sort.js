@@ -42,10 +42,10 @@ function mergeSort(arr, p, r) {
       }
     }
 
-    if (p < r) {
+    if (p < r) { // whittle down the lists to 2 elements
       let q = Math.floor((p + r) / 2);
-      mergeSort(arr, p, q);
-      mergeSort(arr, q + 1, r);
+      mergeSort(arr, p, q); // get the first half of the array (the array upper bound now replaced by q)
+      mergeSort(arr, q + 1, r); // get the second half of the array (the lower bound now q + 1)
       mergeHelper(arr, p, q, r); // finally put the 2 sorted arrays together
     }
 
